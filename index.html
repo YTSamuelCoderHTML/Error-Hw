@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Error Example</title>
+</head>
+
+<body>
+    <button onclick="showError()">Click</button>
+    <p id="error"></p>
+
+    <script>
+        function showError() {
+            try {
+                test();
+            } catch (e) {
+                document.getElementById("error").innerHTML = "Error occurred: " + e;
+            }
+        }
+    </script>
+</body>
+
+</html>
